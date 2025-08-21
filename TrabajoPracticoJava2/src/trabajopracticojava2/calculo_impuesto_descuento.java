@@ -28,6 +28,6 @@ public class calculo_impuesto_descuento {
         System.out.print("Ingrese el impuesto: ");
         impuesto = Double.parseDouble(input.nextLine());
         precio_final = calculo_impuesto_descuento(precio_base,descuento,impuesto);
-        System.out.println("El precio final es: "+ precio_final + " pesos");
+        System.out.println("El precio final es: "+ String.format("%.2f",precio_final) + " pesos");
     }
 }
